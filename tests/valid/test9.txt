@@ -1,0 +1,5 @@
+Inicio;
+
+Proceso numero: 100;
+
+Proceso resultado: numero / 5;

@@ -1,0 +1,6 @@
+Inicio;
+
+Proceso x: 8;
+
+Si x >= 5:
+Proceso y: x - 1;

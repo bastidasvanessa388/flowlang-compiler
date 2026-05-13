@@ -1,0 +1,4 @@
+Inicio;
+
+Si x %% 2:
+Proceso y: 1;

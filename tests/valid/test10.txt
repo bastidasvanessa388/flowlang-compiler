@@ -1,0 +1,9 @@
+Inicio;
+
+Proceso a: 4;
+Proceso b: a * 2;
+
+Si b == 8:
+Proceso c: b + 1;
+Sino:
+Proceso c: 0;

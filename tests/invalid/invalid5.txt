@@ -1,0 +1,4 @@
+Inicio;
+
+Si x > :
+Proceso y: 1;

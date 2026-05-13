@@ -1,0 +1,6 @@
+Inicio;
+
+Si 1 > 0:
+Proceso x: 1;
+Else:
+Proceso x: 0;

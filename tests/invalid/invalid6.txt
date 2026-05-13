@@ -1,0 +1,3 @@
+Inicio;
+
+Proceso a: b + 2;

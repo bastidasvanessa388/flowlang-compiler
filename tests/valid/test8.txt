@@ -1,0 +1,8 @@
+Inicio;
+
+Proceso x: 3;
+
+Si x < 10:
+Proceso y: x + 2;
+Sino:
+Proceso y: 0;

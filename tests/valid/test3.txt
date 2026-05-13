@@ -1,0 +1,5 @@
+Inicio;
+
+Proceso x: 20;
+
+Proceso y: x - 4;
