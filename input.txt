@@ -1,4 +1,5 @@
 Inicio;
+
 Proceso x: 5;
 
 Si x > 0:
