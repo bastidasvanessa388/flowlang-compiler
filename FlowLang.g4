@@ -1,23 +1,55 @@
 grammar FlowLang;
 
+// ========================================
+// REGLA PRINCIPAL
+// ========================================
+
 program
     : step+ EOF
     ;
 
+// ========================================
+// PASOS
+// ========================================
+
 step
-    : INICIO ';'                     # inicioStep
-    | PROCESO ID ':' expr ';'        # procesoStep
-    | control                         # controlStep
+    : INICIO ';'                             # inicioStep
+    | PROCESO ID ':' expression ';'         # procesoStep
+    | control                               # controlStep
     ;
+
+// ========================================
+// CONTROL
+// ========================================
 
 control
-    : SI expr ':' step (SINO ':' step)?
+    : SI condition ':' step (SINO ':' step)?
     ;
 
-expr
-    : ID comparator NUMBER            # exprComp
-    | NUMBER                          # exprNum
+// ========================================
+// CONDICIONES
+// ========================================
+
+condition
+    : expression comparator expression
     ;
+
+// ========================================
+// EXPRESIONES MATEMATICAS
+// ========================================
+
+expression
+    : expression TIMES expression           # mulExpr
+    | expression DIVIDE expression          # divExpr
+    | expression PLUS expression            # plusExpr
+    | expression MINUS expression           # minusExpr
+    | ID                                    # idExpr
+    | NUMBER                                # numberExpr
+    ;
+
+// ========================================
+// COMPARADORES
+// ========================================
 
 comparator
     : '>'
@@ -27,6 +59,10 @@ comparator
     | '=='
     | '!='
     ;
+
+// ========================================
+// TOKENS
+// ========================================
 
 INICIO  : 'Inicio' ;
 PROCESO : 'Proceso' ;
@@ -40,5 +76,6 @@ DIVIDE  : '/' ;
 
 ID      : [a-zA-Z_][a-zA-Z_0-9]* ;
 NUMBER  : [0-9]+ ;
+
 WS      : [ \t\r\n]+ -> skip ;
 COMMENT : '//' ~[\r\n]* -> skip ;

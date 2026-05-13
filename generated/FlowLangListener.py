@@ -53,21 +53,66 @@ class FlowLangListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by FlowLangParser#exprComp.
-    def enterExprComp(self, ctx:FlowLangParser.ExprCompContext):
+    # Enter a parse tree produced by FlowLangParser#condition.
+    def enterCondition(self, ctx:FlowLangParser.ConditionContext):
         pass
 
-    # Exit a parse tree produced by FlowLangParser#exprComp.
-    def exitExprComp(self, ctx:FlowLangParser.ExprCompContext):
+    # Exit a parse tree produced by FlowLangParser#condition.
+    def exitCondition(self, ctx:FlowLangParser.ConditionContext):
         pass
 
 
-    # Enter a parse tree produced by FlowLangParser#exprNum.
-    def enterExprNum(self, ctx:FlowLangParser.ExprNumContext):
+    # Enter a parse tree produced by FlowLangParser#numberExpr.
+    def enterNumberExpr(self, ctx:FlowLangParser.NumberExprContext):
         pass
 
-    # Exit a parse tree produced by FlowLangParser#exprNum.
-    def exitExprNum(self, ctx:FlowLangParser.ExprNumContext):
+    # Exit a parse tree produced by FlowLangParser#numberExpr.
+    def exitNumberExpr(self, ctx:FlowLangParser.NumberExprContext):
+        pass
+
+
+    # Enter a parse tree produced by FlowLangParser#mulExpr.
+    def enterMulExpr(self, ctx:FlowLangParser.MulExprContext):
+        pass
+
+    # Exit a parse tree produced by FlowLangParser#mulExpr.
+    def exitMulExpr(self, ctx:FlowLangParser.MulExprContext):
+        pass
+
+
+    # Enter a parse tree produced by FlowLangParser#divExpr.
+    def enterDivExpr(self, ctx:FlowLangParser.DivExprContext):
+        pass
+
+    # Exit a parse tree produced by FlowLangParser#divExpr.
+    def exitDivExpr(self, ctx:FlowLangParser.DivExprContext):
+        pass
+
+
+    # Enter a parse tree produced by FlowLangParser#minusExpr.
+    def enterMinusExpr(self, ctx:FlowLangParser.MinusExprContext):
+        pass
+
+    # Exit a parse tree produced by FlowLangParser#minusExpr.
+    def exitMinusExpr(self, ctx:FlowLangParser.MinusExprContext):
+        pass
+
+
+    # Enter a parse tree produced by FlowLangParser#plusExpr.
+    def enterPlusExpr(self, ctx:FlowLangParser.PlusExprContext):
+        pass
+
+    # Exit a parse tree produced by FlowLangParser#plusExpr.
+    def exitPlusExpr(self, ctx:FlowLangParser.PlusExprContext):
+        pass
+
+
+    # Enter a parse tree produced by FlowLangParser#idExpr.
+    def enterIdExpr(self, ctx:FlowLangParser.IdExprContext):
+        pass
+
+    # Exit a parse tree produced by FlowLangParser#idExpr.
+    def exitIdExpr(self, ctx:FlowLangParser.IdExprContext):
         pass
 
 

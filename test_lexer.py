@@ -4,25 +4,26 @@ sys.path.insert(0, "generated")
 from antlr4 import CommonTokenStream, FileStream
 from FlowLangLexer import FlowLangLexer
 
+# Leer archivo de entrada
 entrada = FileStream("input.txt", encoding="utf-8")
-lexer   = FlowLangLexer(entrada)
-stream  = CommonTokenStream(lexer)
+
+# Crear lexer
+lexer = FlowLangLexer(entrada)
+
+# Crear stream de tokens
+stream = CommonTokenStream(lexer)
 stream.fill()
 
-sim = FlowLangLexer.symbolicNames
-lit = FlowLangLexer.literalNames
-
-def nombre(tipo):
-    if tipo <= 0: return "EOF"
-    if tipo < len(sim) and sim[tipo] not in (None,"<INVALID>"): return sim[tipo]
-    if tipo < len(lit) and lit[tipo] not in (None,"<INVALID>"): return lit[tipo]
-    return f"T{tipo}"
-
 print("=== TOKENS DETECTADOS ===")
-print("  " + "-"*40)
-for t in stream.tokens:
-    if t.type == -1: continue
-    n = nombre(t.type)
-    if n != "EOF":
-        print(f"  Linea {t.line:<4} | {n:<15} | {repr(t.text)}")
-print("\n=== FIN ===")
+
+for token in stream.tokens:
+    if token.type == -1:
+        continue
+
+    print(
+        f"Linea {token.line:<3} | "
+        f"Tipo {token.type:<3} | "
+        f"Texto '{token.text}'"
+    )
+
+print("=== FIN ===")

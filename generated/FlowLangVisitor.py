@@ -34,13 +34,38 @@ class FlowLangVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by FlowLangParser#exprComp.
-    def visitExprComp(self, ctx:FlowLangParser.ExprCompContext):
+    # Visit a parse tree produced by FlowLangParser#condition.
+    def visitCondition(self, ctx:FlowLangParser.ConditionContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by FlowLangParser#exprNum.
-    def visitExprNum(self, ctx:FlowLangParser.ExprNumContext):
+    # Visit a parse tree produced by FlowLangParser#numberExpr.
+    def visitNumberExpr(self, ctx:FlowLangParser.NumberExprContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by FlowLangParser#mulExpr.
+    def visitMulExpr(self, ctx:FlowLangParser.MulExprContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by FlowLangParser#divExpr.
+    def visitDivExpr(self, ctx:FlowLangParser.DivExprContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by FlowLangParser#minusExpr.
+    def visitMinusExpr(self, ctx:FlowLangParser.MinusExprContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by FlowLangParser#plusExpr.
+    def visitPlusExpr(self, ctx:FlowLangParser.PlusExprContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by FlowLangParser#idExpr.
+    def visitIdExpr(self, ctx:FlowLangParser.IdExprContext):
         return self.visitChildren(ctx)
 
 
