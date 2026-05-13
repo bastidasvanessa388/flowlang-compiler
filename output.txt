@@ -1,0 +1,534 @@
+========================================
+PRUEBAS VALIDAS
+========================================
+
+--- test1.txt ---
+
+=== FLOWLANG COMPILER ===
+
+Leyendo archivo: input.txt
+
+[1] Analisis Lexico
+Lexer completado correctamente
+
+[2] Analisis Sintactico
+Parser completado correctamente
+
+[3] Analisis Semantico
+Analisis semantico correcto
+
+[4] Generacion de Codigo Python
+Archivo generado: output_program.py
+
+=== CODIGO GENERADO ===
+
+x = 5
+
+=== COMPILACION EXITOSA ===
+
+
+
+--- test10.txt ---
+
+=== FLOWLANG COMPILER ===
+
+Leyendo archivo: input.txt
+
+[1] Analisis Lexico
+Lexer completado correctamente
+
+[2] Analisis Sintactico
+Parser completado correctamente
+
+[3] Analisis Semantico
+Analisis semantico correcto
+
+[4] Generacion de Codigo Python
+Archivo generado: output_program.py
+
+=== CODIGO GENERADO ===
+
+a = 4
+b = a * 2
+if b == 8:
+    c = b + 1
+else:
+    c = 0
+
+=== COMPILACION EXITOSA ===
+
+
+
+--- test2.txt ---
+
+=== FLOWLANG COMPILER ===
+
+Leyendo archivo: input.txt
+
+[1] Analisis Lexico
+Lexer completado correctamente
+
+[2] Analisis Sintactico
+Parser completado correctamente
+
+[3] Analisis Semantico
+Analisis semantico correcto
+
+[4] Generacion de Codigo Python
+Archivo generado: output_program.py
+
+=== CODIGO GENERADO ===
+
+x = 10
+y = x + 5
+
+=== COMPILACION EXITOSA ===
+
+
+
+--- test3.txt ---
+
+=== FLOWLANG COMPILER ===
+
+Leyendo archivo: input.txt
+
+[1] Analisis Lexico
+Lexer completado correctamente
+
+[2] Analisis Sintactico
+Parser completado correctamente
+
+[3] Analisis Semantico
+Analisis semantico correcto
+
+[4] Generacion de Codigo Python
+Archivo generado: output_program.py
+
+=== CODIGO GENERADO ===
+
+x = 20
+y = x - 4
+
+=== COMPILACION EXITOSA ===
+
+
+
+--- test4.txt ---
+
+=== FLOWLANG COMPILER ===
+
+Leyendo archivo: input.txt
+
+[1] Analisis Lexico
+Lexer completado correctamente
+
+[2] Analisis Sintactico
+Parser completado correctamente
+
+[3] Analisis Semantico
+Analisis semantico correcto
+
+[4] Generacion de Codigo Python
+Archivo generado: output_program.py
+
+=== CODIGO GENERADO ===
+
+a = 2 * 3
+
+=== COMPILACION EXITOSA ===
+
+
+
+--- test5.txt ---
+
+=== FLOWLANG COMPILER ===
+
+Leyendo archivo: input.txt
+
+[1] Analisis Lexico
+Lexer completado correctamente
+
+[2] Analisis Sintactico
+Parser completado correctamente
+
+[3] Analisis Semantico
+Analisis semantico correcto
+
+[4] Generacion de Codigo Python
+Archivo generado: output_program.py
+
+=== CODIGO GENERADO ===
+
+a = 10 / 2
+
+=== COMPILACION EXITOSA ===
+
+
+
+--- test6.txt ---
+
+=== FLOWLANG COMPILER ===
+
+Leyendo archivo: input.txt
+
+[1] Analisis Lexico
+Lexer completado correctamente
+
+[2] Analisis Sintactico
+Parser completado correctamente
+
+[3] Analisis Semantico
+Analisis semantico correcto
+
+[4] Generacion de Codigo Python
+Archivo generado: output_program.py
+
+=== CODIGO GENERADO ===
+
+if 5 > 2:
+    x = 1
+
+=== COMPILACION EXITOSA ===
+
+
+
+--- test7.txt ---
+
+=== FLOWLANG COMPILER ===
+
+Leyendo archivo: input.txt
+
+[1] Analisis Lexico
+Lexer completado correctamente
+
+[2] Analisis Sintactico
+Parser completado correctamente
+
+[3] Analisis Semantico
+Analisis semantico correcto
+
+[4] Generacion de Codigo Python
+Archivo generado: output_program.py
+
+=== CODIGO GENERADO ===
+
+x = 8
+if x >= 5:
+    y = x - 1
+
+=== COMPILACION EXITOSA ===
+
+
+
+--- test8.txt ---
+
+=== FLOWLANG COMPILER ===
+
+Leyendo archivo: input.txt
+
+[1] Analisis Lexico
+Lexer completado correctamente
+
+[2] Analisis Sintactico
+Parser completado correctamente
+
+[3] Analisis Semantico
+Analisis semantico correcto
+
+[4] Generacion de Codigo Python
+Archivo generado: output_program.py
+
+=== CODIGO GENERADO ===
+
+x = 3
+if x < 10:
+    y = x + 2
+else:
+    y = 0
+
+=== COMPILACION EXITOSA ===
+
+
+
+--- test9.txt ---
+
+=== FLOWLANG COMPILER ===
+
+Leyendo archivo: input.txt
+
+[1] Analisis Lexico
+Lexer completado correctamente
+
+[2] Analisis Sintactico
+Parser completado correctamente
+
+[3] Analisis Semantico
+Analisis semantico correcto
+
+[4] Generacion de Codigo Python
+Archivo generado: output_program.py
+
+=== CODIGO GENERADO ===
+
+numero = 100
+resultado = numero / 5
+
+=== COMPILACION EXITOSA ===
+
+
+
+========================================
+PRUEBAS INVALIDAS
+========================================
+
+--- invalid1.txt ---
+
+=== FLOWLANG COMPILER ===
+
+Leyendo archivo: input.txt
+
+[1] Analisis Lexico
+Lexer completado correctamente
+
+[2] Analisis Sintactico
+Parser completado correctamente
+
+[3] Analisis Semantico
+
+Errores semanticos encontrados:
+
+- Variable no definida: x
+
+Compilacion detenida
+
+
+
+--- invalid10.txt ---
+
+=== FLOWLANG COMPILER ===
+
+Leyendo archivo: input.txt
+
+[1] Analisis Lexico
+Lexer completado correctamente
+
+[2] Analisis Sintactico
+Parser completado correctamente
+
+[3] Analisis Semantico
+Analisis semantico correcto
+
+[4] Generacion de Codigo Python
+Archivo generado: output_program.py
+
+=== CODIGO GENERADO ===
+
+x = None
+
+=== COMPILACION EXITOSA ===
+line 3:11 token recognition error at: '@'
+line 3:12 mismatched input ';' expecting {ID, NUMBER}
+
+
+
+--- invalid2.txt ---
+
+=== FLOWLANG COMPILER ===
+
+Leyendo archivo: input.txt
+
+[1] Analisis Lexico
+Lexer completado correctamente
+
+[2] Analisis Sintactico
+Parser completado correctamente
+
+[3] Analisis Semantico
+Analisis semantico correcto
+
+[4] Generacion de Codigo Python
+Archivo generado: output_program.py
+
+=== CODIGO GENERADO ===
+
+x = 5
+
+=== COMPILACION EXITOSA ===
+line 3:0 missing ';' at 'Proceso'
+
+
+
+--- invalid3.txt ---
+
+=== FLOWLANG COMPILER ===
+
+Leyendo archivo: input.txt
+
+[1] Analisis Lexico
+Lexer completado correctamente
+
+[2] Analisis Sintactico
+Parser completado correctamente
+
+[3] Analisis Semantico
+
+Errores semanticos encontrados:
+
+- Variable no definida: x
+
+Compilacion detenida
+line 3:5 token recognition error at: '%'
+line 3:6 token recognition error at: '%'
+line 3:8 missing {'>', '<', '>=', '<=', '==', '!='} at '2'
+
+
+
+--- invalid4.txt ---
+
+=== FLOWLANG COMPILER ===
+
+Leyendo archivo: input.txt
+
+[1] Analisis Lexico
+Lexer completado correctamente
+
+[2] Analisis Sintactico
+Parser completado correctamente
+
+[3] Analisis Semantico
+
+Errores semanticos encontrados:
+
+- El programa debe comenzar con Inicio;
+
+Compilacion detenida
+
+
+
+--- invalid5.txt ---
+
+=== FLOWLANG COMPILER ===
+
+Leyendo archivo: input.txt
+
+[1] Analisis Lexico
+Lexer completado correctamente
+
+[2] Analisis Sintactico
+Parser completado correctamente
+
+[3] Analisis Semantico
+
+Errores semanticos encontrados:
+
+- Variable no definida: x
+
+Compilacion detenida
+line 3:7 mismatched input ':' expecting {ID, NUMBER}
+
+
+
+--- invalid6.txt ---
+
+=== FLOWLANG COMPILER ===
+
+Leyendo archivo: input.txt
+
+[1] Analisis Lexico
+Lexer completado correctamente
+
+[2] Analisis Sintactico
+Parser completado correctamente
+
+[3] Analisis Semantico
+
+Errores semanticos encontrados:
+
+- Variable no definida: b
+
+Compilacion detenida
+
+
+
+--- invalid7.txt ---
+
+=== FLOWLANG COMPILER ===
+
+Leyendo archivo: input.txt
+
+[1] Analisis Lexico
+Lexer completado correctamente
+
+[2] Analisis Sintactico
+Parser completado correctamente
+
+[3] Analisis Semantico
+Analisis semantico correcto
+
+[4] Generacion de Codigo Python
+Archivo generado: output_program.py
+
+=== CODIGO GENERADO ===
+
+x = 5
+
+=== COMPILACION EXITOSA ===
+line 3:10 missing ':' at '5'
+
+
+
+--- invalid8.txt ---
+
+=== FLOWLANG COMPILER ===
+
+Leyendo archivo: input.txt
+
+[1] Analisis Lexico
+Lexer completado correctamente
+
+[2] Analisis Sintactico
+Parser completado correctamente
+
+[3] Analisis Semantico
+Analisis semantico correcto
+
+[4] Generacion de Codigo Python
+Archivo generado: output_program.py
+
+=== CODIGO GENERADO ===
+
+if 1 > 0:
+    x = 1
+x = 0
+
+=== COMPILACION EXITOSA ===
+line 5:0 extraneous input 'Else' expecting {<EOF>, 'Inicio', 'Proceso', 'Si'}
+
+
+
+--- invalid9.txt ---
+
+=== FLOWLANG COMPILER ===
+
+Leyendo archivo: input.txt
+
+[1] Analisis Lexico
+Lexer completado correctamente
+
+[2] Analisis Sintactico
+Parser completado correctamente
+
+[3] Analisis Semantico
+Analisis semantico correcto
+
+[4] Generacion de Codigo Python
+Archivo generado: output_program.py
+
+=== CODIGO GENERADO ===
+
+x = 5 + None
+
+=== COMPILACION EXITOSA ===
+line 3:15 mismatched input ';' expecting {ID, NUMBER}
+
+
